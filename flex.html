@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Layout: Flex</title>
+	<style>
+		body {
+			display: flex;
+			flex-direction: column;
+			background-color: lightgray;
+		}
+		h1 {
+			margin-bottom: 20px;
+			margin-top:10px;
+			margin-left: 15px;
+			color: blue;
+			font: 30px;
+		}
+
+		.information, .content {
+			display: flex;
+			flex: 1;
+		}
+
+		.information {
+			font-weight: 12px;
+		}
+		.col {
+		   padding-left: 20px;
+		   padding-right:20px;
+		   padding-top: 25px;
+		   padding-bottom: 25px;
+		   border: 1px solid blue;
+		   background: white;
+			
+		}
+		.col-center {
+		   margin-left: 2px;
+		   margin-right: 2px;
+		   order: 2;
+		   width: 50%;
+		}
+
+		.col-left {
+			order: 1;
+			width: 30%;
+			}
+		
+		.col-right {
+		   order: 3;
+			width: 20%;
+		}
+		p {
+			margin-top:0px;
+			margin-right: 10px;
+		}
+		h3 {
+			margin-top:0;
+			white-space: nowrap;
+		}
+		.footer {
+			text-align: center;
+			margin-top: 25px;
+			color: black;
+			font: 12px;
+		}
+	</style>
+</head>
+<body>
+	<h1> The JPEG Image </h1>
+			
+	<div class="information">
+		<div class="col col-left">
+			<p> The term "JPEG" is an acronym for the Joint Photographic Experts Group, which created the standard. The MIME media type for JPEG is image/lpeg, except in older Internet Explorer versions, which provides a MIME type of image/pjpeg when unloading JPEG images. JPEG files usually have a filename extension of .jpg or .jpeg.</p>
+			<p>JPEG/JFIF supports a maximum image size of 65,535 x 65,535 pixels, hence up to 4 gigapixels (for an aspect ratio 1:1).</p>
+			<p>(from <a href="https://en.wikipedia.org/wiki/JPEG"> https://en.wikipedia.org/wiki/JPEG</a>)</p></div>
+		<div class="col col-center"><img src="http://jpeg.org/images/jpeg-home.jpg"><br><br>(Image from <a href="http://jpeg.org/images/jpeg-home.jpg">http://jpeg.org/images/jpeg-home.jpg</a>)</div>
+		<div class="col col-right">
+			<h3>Other Image Types</h3>
+			<ul>
+				<li>jpg</li>
+				<li>png</li>
+				<li>gif</li>
+				<li>bmp</li>
+			</ul>
+		
+		</div></div>
+	<h3 class="footer"> &copy; Stolen Blatantly from Wikipeida</h3>
+
+	
+</body>
+</html>
